@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: BSD-2-Clause
 // Copyright The Music Player Daemon Project
 
-#include "config.h"
+// #include "config.h"
 #include "kvlist.h"
 
 #include <assert.h>
@@ -45,19 +45,19 @@ mpd_kvlist_deinit(struct mpd_kvlist *l)
 	}
 }
 
-#ifndef HAVE_STRNDUP
-static char *
-strndup(const char *s, size_t length)
-{
-	char *p = malloc(length + 1);
-	if (p != NULL) {
-		memcpy(p, s, length);
-		p[length] = 0;
-	}
+// #ifndef HAVE_STRNDUP
+// static char *
+// strndup(const char *s, size_t length)
+// {
+// 	char *p = malloc(length + 1);
+// 	if (p != NULL) {
+// 		memcpy(p, s, length);
+// 		p[length] = 0;
+// 	}
 
-	return p;
-}
-#endif
+// 	return p;
+// }
+// #endif
 
 void
 mpd_kvlist_add(struct mpd_kvlist *l, const char *key, size_t key_length,

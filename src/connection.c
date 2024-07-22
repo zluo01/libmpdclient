@@ -13,7 +13,7 @@
 #include "socket.h"
 #include "internal.h"
 #include "iasync.h"
-#include "config.h"
+// #include "config.h"
 
 #include <assert.h>
 #include <stdlib.h>

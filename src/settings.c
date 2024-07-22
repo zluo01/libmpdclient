@@ -2,7 +2,7 @@
 // Copyright The Music Player Daemon Project
 
 #include <mpd/settings.h>
-#include "config.h"
+// #include "config.h"
 #include "internal.h"
 
 #include <assert.h>

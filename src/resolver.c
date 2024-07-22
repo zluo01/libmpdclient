@@ -2,7 +2,7 @@
 // Copyright The Music Player Daemon Project
 
 #include "resolver.h"
-#include "config.h"
+// #include "config.h"
 
 #include <stdbool.h>
 #include <stdio.h>

@@ -271,6 +271,10 @@ global:
 	mpd_parse_queue_save_mode;
 	mpd_lookup_queue_save_mode;
 	mpd_send_playlistlength;
+	mpd_playlist_search_begin;
+	mpd_playlist_search_add_window;
+	mpd_playlist_search_commit;
+	mpd_playlist_search_cancel;
 
 	/* mpd/queue.h */
 	mpd_send_list_queue_meta;
@@ -466,6 +470,12 @@ global:
 	mpd_return_sticker;
 	mpd_send_stickernames;
 	mpd_send_stickertypes;
+	mpd_sticker_search_begin;
+	mpd_sticker_search_add_value_constraint;
+	mpd_sticker_search_add_sort;
+	mpd_sticker_search_add_window;
+	mpd_sticker_search_commit;
+	mpd_sticker_search_cancel;
 
 	/* mpd/fingerprint.h */
 	mpd_parse_fingerprint_type;

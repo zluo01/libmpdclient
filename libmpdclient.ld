@@ -28,6 +28,19 @@ global:
 	mpd_run_clear_tag_types;
 	mpd_send_all_tag_types;
 	mpd_run_all_tag_types;
+	mpd_send_reset_tag_types;
+	mpd_run_reset_tag_types;
+	mpd_send_list_protocol_features;
+	mpd_send_list_protocol_features_available;
+	mpd_recv_protocol_feature_pair;
+	mpd_send_disable_protocol_features;
+	mpd_run_disable_protocol_features;
+	mpd_send_enable_protocol_features;
+	mpd_run_enable_protocol_features;
+	mpd_send_clear_protocol_features;
+	mpd_run_clear_protocol_features;
+	mpd_send_all_protocol_features;
+	mpd_run_all_protocol_features;
 
 	/* mpd/connection.h */
 	mpd_connection_new;
@@ -77,6 +90,10 @@ global:
 	mpd_entity_begin;
 	mpd_entity_feed;
 	mpd_recv_entity;
+
+	/* mpd/feature.h */
+	mpd_feature_name;
+	mpd_feature_name_parse;
 
 	/* mpd/idle.h */
 	mpd_idle_name;
@@ -470,6 +487,7 @@ global:
 	mpd_return_sticker;
 	mpd_send_stickernames;
 	mpd_send_stickertypes;
+	mpd_send_stickernamestypes;
 	mpd_sticker_search_begin;
 	mpd_sticker_search_add_value_constraint;
 	mpd_sticker_search_add_sort;
